@@ -78,8 +78,15 @@ int main(){
     }
 	
     printf("------------------------------------------------\n");
-
-
+    printf("OUTPUT MATRIX\n");
+    for(int craig = 0; craig < 4 ; craig++)
+    {
+        printf("%f \t" , h_out[craig]);
+        if(craig == 1){
+            puts("");
+        }
+    }
+    puts("");
 	cudaFree(d_in);
     cudaFree(d_in2);
 	cudaFree(d_out);
